@@ -19,29 +19,31 @@
     </header>
 
     <form onsubmit="setPrefs(event)">
-        <div class="prefrence">
-            <label for="bg-color">Choose Background Color:&nbsp &nbsp</label>
-            <input type="color" name="bg-color" id="bg-color">
-        </div>
-        <div class="prefrence">
-            <label for="txt-color">Choose Text Color:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
-            <input type="color" name="txt-color" id="txt-color">
-        </div>
-        <div class="prefrence">
-            <label for="birth-date">Date of Birth:&nbsp </label>
-            <input type="date" name="birth-date" id="birth-date"> 
-        </div>
-        <div class="prefrence">
-            <label for="user-age">Date of Birth:&nbsp </label>
-            <input type="range" name="user-age" id="user-age" min="18" max="120" onchange="renderAge(this.value)" value="30">
-            <span class="user-age-render">30</span>
-        </div>
-        <div class="prefrence">
-            <label for="email-address">Email Address:&nbsp </label>
-            <input type="email" name="email-address" id="email-address" required> 
-        </div>
-        <button>Go!</button>
-    </form>
+        <section class="form-container">
+            <div class="prefrence">
+                <label for="bg-color">Choose Background Color:&nbsp &nbsp</label>
+                <input type="color" name="bg-color" id="bg-color">
+            </div>
+            <div class="prefrence">
+                <label for="txt-color">Choose Text Color:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </label>
+                <input type="color" name="txt-color" id="txt-color">
+            </div>
+            <div class="prefrence">
+                <label for="birth-date">Date of Birth:&nbsp </label>
+                <input type="date" name="birth-date" id="birth-date"> 
+            </div>
+            <div class="prefrence">
+                <label for="user-age">Date of Birth:&nbsp </label>
+                <input type="range" name="user-age" id="user-age" min="18" max="120" onchange="renderAge(this.value)" value="30">
+                <span class="user-age-render">30</span>
+            </div>
+            <div class="prefrence">
+                <label for="email-address">Email Address:&nbsp </label>
+                <input type="email" name="email-address" id="email-address" required> 
+            </div>
+            <button>Go!</button>
+        </section>
+        </form>
 
     
     <script src="js/service/utilService.js"></script>
