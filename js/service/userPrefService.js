@@ -5,7 +5,8 @@ const gAstroFore = generateAstroFore();
 function getAstroFore(birthDate) {
     if (birthDate.substring(0, 4) > 2000) return gAstroFore.newFore;
     if (birthDate.substring(0, 4) > 1990) return gAstroFore.curFore;
-    return gAstroFore.oldFore;
+    if (birthDate.substring(0, 4) > 1970) return gAstroFore.oldFore;
+    return;
 }
 
 function generateAstroFore() {

@@ -1,13 +1,11 @@
 'use strict';
 
-function makeId(length=6) {
+function makeId(length = 4) {
     var txt = '';
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
     for (var i = 0; i < length; i++) {
         txt += possible.charAt(Math.floor(Math.random() * possible.length));
     }
-
     return txt;
 }
 
@@ -32,4 +30,12 @@ function _createMapById(items) {
         map[item.id] = item;
     });
     return map;
+}
+
+function getTime() {
+    var today = new Date();
+    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear() ;
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date + ' ' + time;
+    return dateTime;
 }

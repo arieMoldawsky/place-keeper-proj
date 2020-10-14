@@ -32,7 +32,7 @@ nav a {
     border: 1px solid rgb(170, 168, 168);
     padding: 7px;
     background-color: rgb(219, 231, 54);
-    color: rgb(117, 116, 116);
+    color: rgb(143, 142, 142);
     font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
@@ -62,7 +62,7 @@ nav a:hover {
     font-weight: bolder;
     font-size: 2rem;
     color: snow;
-    text-align: justify;
+    text-align: center;
 }
 
 /*///// prefs //////*/
@@ -81,7 +81,7 @@ nav a:hover {
 .prefs-header {
     flex-grow: 0.5;
     text-align: center;
-    background-color:  rgb(219, 231, 54);
+    background-color: rgb(219, 231, 54);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,7 +120,7 @@ form .prefrence {
 .map-header {
     flex-grow: 0.5;
     text-align: center;
-    background-color:  rgb(219, 231, 54);
+    background-color: rgb(219, 231, 54);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,9 +130,66 @@ form .prefrence {
     background-color: rgb(109, 90, 87);
     flex-grow: 12;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-section img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 #map {
-    height: 400px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
-   }
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+.my-location {
+    width: 50px;
+    height: auto;
+    background-color: snow;
+    border-radius: 50%;
+}
+
+.places-list {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.places-list button {
+    background-color: red;
+    color: snow;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.places-list button:hover {
+    background-color: rgb(207, 13, 13);
+    transition: 0.3s;
+}
+
+.places-list tr th {
+    background-color: #e9e98f;
+}
+
+
+td, th {
+    border: 2px solid rgb(66, 65, 65);
+    max-width: 200px;
+    min-width: 70px;
+    height: 60px;
+    /* border-radius: 4px; */
+}
+
+.places-list tr {
+    background-color: #DBE736;
+}
+
+.places-list tr:hover {
+    background-color: rgb(241, 241, 180);
+    transition: 0.3s;
+}

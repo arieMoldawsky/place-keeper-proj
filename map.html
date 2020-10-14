@@ -8,7 +8,7 @@
     <title>AM-Place-Keeper</title>
 </head>
 
-<body class="map-body">
+<body class="map-body" onload="onInit()">
     <nav class="navbar map-navbar">
         <div>Place-Maker Inc.</div>
         <a href="index.html">Home</a>
@@ -17,16 +17,29 @@
     </nav>
 
     <header class="map-header">
-        <h1 class="title">The Map</h1>
+        <h1 class="title" >The Map</h1>
     </header>
 
     <section class="map-section">
         <div id="map"></div>
+        <img class="my-location" src="img/my-location.jpg" onclick="onMyLocation()">
+        <table class="places-list">
+            <thead>
+                <tr>
+                    <th>No'</th>
+                    <th>Place's Name</th>
+                    <th>Date of Saving</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="placelist-table-body">
+            </tbody>
+        </table>
     </section>
 
 
-
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxF0zHdWh93Yk9-9Bss81iBckvFYqtew&callback=initMap"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxF0zHdWh93Yk9-9Bss81iBckvFYqtew&callback=initMap"></script>
     <script src="js/service/utilService.js"></script>
     <script src="js/service/userPrefService.js"></script>
     <script src="js/service/placeService.js"></script>
