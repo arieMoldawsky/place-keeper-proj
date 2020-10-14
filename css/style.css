@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.index-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: rgb(61, 61, 53);
+    flex-grow: 1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+nav div {
+    margin: 0 25px;
+    font-weight: bold;
+    color: snow;
+}
+
+nav a {
+    border: 1px solid rgb(170, 168, 168);
+    padding: 7px;
+    background-color: rgb(219, 231, 54);
+    color: rgb(117, 116, 116);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 7px;
+}
+
+nav a:hover {
+    background-color: snow;
+    transition: 0.3s;
+}
+
+.home-header {
+    background-color: rgb(219, 231, 54);
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.slogan {
+    padding: 25px;
+    background-color: rgb(109, 90, 87);
+    flex-grow: 7;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: snow;
+    text-align: justify;
+}
+
+/*///// prefs //////*/
+
+.prefs-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.prefs-navbar {
+    flex-grow: 0.5;
+}
+
+.prefs-header {
+    flex-grow: 0.5;
+    text-align: center;
+    background-color:  rgb(219, 231, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    background-color: rgb(109, 90, 87);
+    flex-grow: 12;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+form .prefrence {
+    width: 400px;
+    margin: 20px 0;
+    color: snow;
+}
+
+/*///////// map////////// */
+
+.map-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.map-navbar {
+    flex-grow: 0.5;
+}
+
+.map-header {
+    flex-grow: 0.5;
+    text-align: center;
+    background-color:  rgb(219, 231, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map-section {
+    background-color: rgb(109, 90, 87);
+    flex-grow: 12;
+    padding: 50px;
+}
+
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }

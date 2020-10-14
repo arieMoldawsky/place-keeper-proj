@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AM-Place-Keeper</title>
+</head>
+
+<body class="map-body">
+    <nav class="navbar map-navbar">
+        <div>Place-Maker Inc.</div>
+        <a href="index.html">Home</a>
+        <a href="user-prefs.html">Prefrences</a>
+        <a href="map.html">Map</a>
+    </nav>
+
+    <header class="map-header">
+        <h1 class="title">The Map</h1>
+    </header>
+
+    <section class="map-section">
+        <div id="map"></div>
+    </section>
+
+
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrxF0zHdWh93Yk9-9Bss81iBckvFYqtew&callback=initMap" type="text/javascript"></script>
+    <script src="js/service/utilService.js"></script>
+    <script src="js/service/userPrefService.js"></script>
+    <script src="js/service/placeService.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+</body>
+
+</html>
