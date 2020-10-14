@@ -23,7 +23,7 @@ function initPrefs() {
     homeHeader.style.color = getFromStorage('txtc');
     const elSlogan = document.querySelector('.slogan');
     const astroForecast = getFromStorage('astro-fore');
-    if(astroForecast) elSlogan.innerHTML = `<p style="text-align: justify">${astroForecast}</p>`;
+    if (astroForecast) elSlogan.innerHTML = `<p style="text-align: justify">${astroForecast}</p>`;
 }
 
 function renderAstro(birthDate) {
@@ -53,18 +53,20 @@ function onMyLocation() {
 }
 
 function placeMarkerAndPanTo(latLng, map) {
-    new google.maps.Marker({
-        position: latLng,
-        map: map,
-    });
-    map.panTo(latLng);
     const savedPlaces = getSavedPlaces();
     var locationName = prompt('Insert the location\'s name.');
     var time = getTime();
     var id = makeId();
-    savedPlaces.push({ locationName, latLng, time, id });
-    saveToStorage('savedPlaces', savedPlaces);
-    renderSavedList();
+    if (locationName) {
+        new google.maps.Marker({
+            position: latLng,
+            map: map,
+        });
+        map.panTo(latLng);
+        savedPlaces.push({ locationName, latLng, time, id });
+        saveToStorage('savedPlaces', savedPlaces);
+        renderSavedList();
+    } else return
 }
 
 function renderSavedList() {

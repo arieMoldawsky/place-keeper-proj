@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-    background-color: rgb(61, 61, 53);
+    background-color: rgb(59, 59, 58);
     flex-grow: 1;
     text-align: left;
     display: flex;
@@ -56,11 +56,11 @@ nav a:hover {
 
 .slogan {
     padding: 25px;
-    background-color: rgb(109, 90, 87);
+    background-color: rgb(94, 87, 86);
     flex-grow: 7;
     font-style: italic;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: snow;
     text-align: center;
 }
@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 form {
-    background-color: rgb(109, 90, 87);
+    background-color:  rgb(94, 87, 86);
     flex-grow: 12;
     padding: 50px;
     display: flex;
@@ -99,7 +99,6 @@ form {
 }
 
 form .prefrence {
-    width: 400px;
     margin: 20px 0;
     color: snow;
 }
